@@ -15,15 +15,15 @@ All of the toy data is stored in the db.json file. You'll want to access this da
 You can also check out http://localhost:3000/toys/:id
 
 ## STEP 2: Fetch Andy's Toys!
-
+<!-- 
 On the index.html page, there is a div with the id "toy-collection"
 
-When the page loads, make a 'GET' request to fetch all the toy objects. With the response data, make a `<div class="card">` for each toy and add it to the toy-collection div.
+When the page loads, make a 'GET' request to fetch all the toy objects. With the response data, make a `<div class="card">` for each toy and add it to the toy-collection div. -->
 
 ## STEP 3: Add toy info to the card!
 
 Each card should have the following child elements:
-  * h2 tag with the toy's name
+  <!-- * h2 tag with the toy's name
   * image tag with the src of the toy's image attribute - needs a class name of "toy-avatar"
   * p tag with how many likes that toy has
   * button tag with an class of "like-btn"
@@ -37,9 +37,9 @@ After all if that - the toy card should resemble:
     <p>4 Likes </p>
     <button class="like-btn">Like <3</button>
   </div>
-  ```
+  ``` -->
 
-## STEP 4: Add a new toy!
+<!-- ## STEP 4: Add a new toy!
 
 * When a user clicks on the add new toy button - a POST request is sent to http://localhost:3000/toys and the new toy is added to Andy's Toy Collection.
 * The toy should conditionally render to the page.
@@ -61,7 +61,7 @@ body:
 }
 ```
 
-* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
+* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options). -->
 
 ## STEP 5: Increase toy's likes!
 
