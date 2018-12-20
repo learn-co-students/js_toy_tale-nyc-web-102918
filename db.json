@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": "7"
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": "11"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "id": 5,
       "name": "Rex",
       "image": "http://umich.edu/~chemh215/W11HTML/SSG5/ssg5.2/FRex.png",
-      "likes": 1
+      "likes": "3"
     },
     {
       "id": 6,
@@ -47,6 +47,48 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Jessie",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Jessie Again",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
+      "likes": "1",
+      "id": 10
+    },
+    {
+      "name": "Jessie #3",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
+      "likes": "6",
+      "id": 11
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": "1",
+      "id": 12
+    },
+    {
+      "name": "",
+      "image": "",
+      "likes": 0,
+      "id": 13
+    },
+    {
+      "name": "Puppy",
+      "image": "https://86cb8127dc14737f5057-7c0671222953158607ea93d5febd68b4.ssl.cf1.rackcdn.com/660/assets/responsive/493000/493970/web_dog-puppy.jpg",
+      "likes": 0,
+      "id": 14
+    },
+    {
+      "name": "sleepy puppy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa75h8DFFU5d67mQ9eAOWLnYiFkQXiRbwyhoy9yu9gYW8fZHsPzw",
+      "likes": "15",
+      "id": 15
     }
   ]
 }
