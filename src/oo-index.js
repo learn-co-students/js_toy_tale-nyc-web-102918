@@ -1,42 +1,25 @@
 const addBtn = document.querySelector('#new-toy-btn')
 const toyForm = document.querySelector('.container')
-let addToy = false
-
-// YOUR CODE HERE
-
-addBtn.addEventListener('click', () => {
-  // hide & seek with the form
-  addToy = !addToy
-  if (addToy) {
-    toyForm.style.display = 'block'
-    // submit listener here
-  } else {
-    toyForm.style.display = 'none'
-  }
-})
-
-
-// OR HERE!
-
-let allToys = []
 const toyCollection = document.querySelector("#toy-collection")
-
-function showToy(toy) {
-  toyCollection.innerHTML += `
-    <div id="toy-${toy.id}" class="card">
-      <h2> ${toy.name} </h2>
-      <img src="${toy.image}" class="toy-avatar">
-      <p> ${toy.likes} Likes </p>
-      <button data-id="${toy.id}" class="like-btn"> Like <3 </button>
-    </div>
-  `
-}
+let addToy = false
 
 fetch("http://localhost:3000/toys")
 .then( result => result.json() )
 .then( parsedResult => {
-  allToys = parsedResult
-  allToys.forEach( toy => showToy(toy))
+  parsedResult.forEach( toy => {
+    const newToy = new Toy(toy)
+    toyCollection.innerHTML += newToy.renderToy()
+  })
+})
+
+addBtn.addEventListener('click', () => {
+  addToy = !addToy
+  if (addToy) {
+    toyForm.style.display = 'block'
+  }
+  else {
+    toyForm.style.display = 'none'
+  }
 })
 
 document.body.addEventListener("submit", event => {
@@ -61,15 +44,16 @@ document.body.addEventListener("submit", event => {
   })
   .then( result => result.json() )
   .then( parsedResult => {
-    showToy(parsedResult)
-    allToys.push(parsedResult)
+    const newToy = new Toy(parsedResult)
+    toyCollection.innerHTML += newToy.renderToy()
   })
 })
 
 document.body.addEventListener("click", event => {
   if (event.target.className === "like-btn") {
     const toyId = event.target.dataset.id
-    const toyObject = allToys.find( toy => toy.id == toyId)
+    const toyObject = Toy.allToys.find( toy => toy.id == toyId)
+    const toyIdx = Toy.allToys.findIndex( toy => toy === toyObject )
     const toyElement = document.querySelector(`#toy-${toyId}`)
 
     fetch(`http://localhost:3000/toys/${toyId}`, {
@@ -84,6 +68,7 @@ document.body.addEventListener("click", event => {
     })
     .then( result => result.json() )
     .then( parsedResult => {
+      Toy.allToys[toyIdx] = parsedResult
       toyElement.innerHTML = `
         <h2> ${parsedResult.name} </h2>
         <img src="${parsedResult.image}" class="toy-avatar">
