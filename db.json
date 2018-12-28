@@ -10,7 +10,7 @@
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 11
     },
     {
       "id": 3,
@@ -40,13 +40,37 @@
       "id": 7,
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
-      "likes": 0
+      "likes": 2
     },
     {
       "id": 8,
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "likes": 0,
+      "name": null,
+      "image": null,
+      "id": 9
+    },
+    {
+      "likes": 0,
+      "name": null,
+      "image": null,
+      "id": 10
+    },
+    {
+      "likes": 0,
+      "name": null,
+      "image": null,
+      "id": 11
+    },
+    {
+      "likes": 2,
+      "name": "Jordan",
+      "image": "https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-1/p160x160/37235548_10214408197772295_682481470249369600_n.jpg?_nc_cat=109&_nc_ht=scontent-lga3-1.xx&oh=d0c5013ea67efb133ded9513fe1e52c7&oe=5C957C73",
+      "id": 12
     }
   ]
 }
