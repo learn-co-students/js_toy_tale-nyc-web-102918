@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 8
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "name": "Mr. Potato Head",
       "image": "https://vignette.wikia.nocookie.net/universe-of-smash-bros-lawl/images/d/d8/Mr-potato-head-toy-story.gif/revision/latest?cb=20151129131217",
-      "likes": 3
+      "likes": 4
     },
     {
       "id": 4,
@@ -47,6 +47,18 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Creepy doll thing",
+      "image": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiWpJCGlLHfAhUCc98KHXzcDdUQjRx6BAgBEAU&url=http%3A%2F%2Fpixar.wikia.com%2Fwiki%2FBabyface&psig=AOvVaw0HP_cmG3whv92iaP44r35B&ust=1545489729990854",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Creepy doll thing",
+      "image": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj8lpurrM_fAhWBneAKHRdvBocQjRx6BAgBEAU&url=http%3A%2F%2Fpixar.wikia.com%2Fwiki%2FBabyface&psig=AOvVaw2tDge6mZJ6j39YTfEmlETB&ust=1546527045717460",
+      "likes": 5,
+      "id": 10
     }
   ]
 }
